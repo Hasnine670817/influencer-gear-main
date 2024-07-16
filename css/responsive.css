@@ -48,6 +48,22 @@ For - leptop
 
 
 
+    /* 
+    ------------------
+    feature-area
+    ------------------
+    */
+
+    .feature-area .d-flex {
+        gap: 50px;
+    }
+
+    .feature-content h1 {
+        line-height: 45px;
+    }
+
+
+
 }
 
 
@@ -127,6 +143,39 @@ For - Ipad/Tablet
 
     .card-area h4 {
         font-size: 17px;
+    }
+
+
+
+    /* 
+    ------------------
+    feature-area
+    ------------------
+    */
+
+    .feature-area {
+        padding: 50px 0 50px;
+    }
+
+    .feature-area .d-flex {
+        gap: 30px;
+    }
+
+    .feature-area .d-flex > div {
+        width: 50%;
+    }
+
+    .feature-content h1 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .feature-content p {
+        font-size: 14px;
+    }
+
+    .feature-content p br {
+        display: none;
     }
 
 
@@ -267,6 +316,45 @@ For - Mobile
 
 
 
+    /* 
+    ------------------
+    feature-area
+    ------------------
+    */
+
+    .feature-area {
+        padding: 50px 0 50px;
+    }
+
+    .feature-area .d-flex {
+        gap: 30px;
+    }
+
+    .feature-content {
+        order: 1;
+        text-align: center;
+    }
+
+    .feature-img {
+        order: 2;
+    }
+
+    .feature-content h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .feature-content p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .feature-content p br {
+        display: none;
+    }
+
+
+
 
 }
 
@@ -315,7 +403,8 @@ For - Mobile
 
 @media (min-width: 1200px) {
 
-    .header-area .container {
+    .header-area .container,
+    .feature-area .container {
         max-width: 1180px;
     }
 

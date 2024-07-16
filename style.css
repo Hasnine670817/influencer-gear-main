@@ -171,7 +171,7 @@ collection-area
 */
 
 .collection-area {
-    padding: 100px 0 0;
+    padding: 100px 0 100px;
 }
 
 .collection-area > div > h2 {
@@ -239,9 +239,56 @@ collection-area
     margin-left: 8px;
 }
 
+.see-more-div {
+    text-align: end;
+    padding: 50px 0 0;
+}
+
+.see-more-div a {
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+}
+
+.see-more-div a i {
+    margin-left: 8px;
+}
 
 
 
+/* 
+------------------
+feature-area
+------------------
+*/
 
-/* meadia - query */
+.feature-area {
+    padding: 0 0 100px;
+}
 
+.feature-area .d-flex {
+    gap: 95px;
+}
+
+.feature-content h1 {
+    color: rgb(10, 8, 38);
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.feature-content p {
+    color: rgb(108, 108, 108);
+    font-weight: 700;
+    margin: 16px 0;
+}
+
+.feature-content a {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    background: rgb(224, 44, 109);
+    padding: 10px 24px;
+}
+
+.feature-content a i {
+    margin-left: 8px;
+}
