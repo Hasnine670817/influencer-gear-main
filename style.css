@@ -50,6 +50,10 @@ small {
     display: inline-block;
 }
 
+img {
+    vertical-align: middle;
+}
+
 .d-flex {
     display: flex;
 }
@@ -132,6 +136,27 @@ header-area
 }
 
 
+/* 
+-------------------
+logo-area
+-------------------
+*/
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    padding: 35px 0;
+}
+
+.bg-spn {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+}
+
+
 
 
 
@@ -175,6 +200,18 @@ For - leptop
     }
 
 
+    /* 
+    -------------------
+    logo-area
+    -------------------
+    */
+
+    .logo-grid {
+        gap: 20px;
+    }
+
+
+
 }
 
 
@@ -213,6 +250,24 @@ For - Ipad/Tablet
     .banner-content h1 {
         font-size: 30px;
         line-height: 35px;
+    }
+
+
+
+    /* 
+    -------------------
+    logo-area
+    -------------------
+    */
+
+    .logo-grid {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-grid img {
+        width: 17%;
+        padding: 0 17px 13px;
     }
 
 
@@ -264,6 +319,10 @@ For - Mobile
         margin: 0 0 15px;
     }
 
+    .banner-area {
+        padding-bottom: 0;
+    }
+
     .banner-content {
         order: 2;
         text-align: center;
@@ -277,6 +336,31 @@ For - Mobile
 
     .banner-img-div {
         order: 1;
+    }
+
+
+    /* 
+    -------------------
+    logo-area
+    -------------------
+    */
+
+    .logo-grid {
+        display: block;
+        text-align: center;
+    }
+
+    .logo-grid img {
+        width: 24%;
+        padding: 0 10px 13px;
+    }
+
+    .logo-grid img:first-of-type {
+        width: 18%;
+    }
+
+    .bg-spn {
+        display: none;
     }
 
 
@@ -305,6 +389,11 @@ For - Mobile
 }
 
 @media (min-width: 1200px) {
+
+    .header-area .container {
+        max-width: 1180px;
+    }
+
     .container {
         max-width: 1140px;
     }
